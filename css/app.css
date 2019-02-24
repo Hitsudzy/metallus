@@ -67,18 +67,6 @@
     width: 50%;
     margin-top: 60px;
 }
-@keyframes visible{
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-@keyframes move{
-  from {top: 50%;}
-  to {top: 33px;}
-}
-@keyframes width{
-  from {width: 100%;}
-  to {width: 100px;}
-}
 .footer{
   position: absolute;
   bottom: 0;
@@ -137,6 +125,64 @@
   top: 40%;
   transform: translateX(-50%) translateY(-50%);
   width: 800px;
+}
+.polygon{
+  width: 180px;
+  margin: 10px;
+  margin-left: 25px;
+}
+.polygon:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 0.3s
+
+}
+.poly1, .poly2, .poly3, .poly4, .poly5{
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-100%) translateY(-50%);
+}
+.poly2{
+  transform: translateX(0%) translateY(-50%);
+}
+.poly3{
+  transform: translateX(-50%) translateY(33%);
+}
+.poly4{
+  transform: translateX(50%) translateY(33%);
+}
+.poly5{
+  transform: translateX(-150%) translateY(33%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes visible{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes move{
+  from {top: 50%;}
+  to {top: 33px;}
+}
+@keyframes width{
+  from {width: 100%;}
+  to {width: 100px;}
+}
+@keyframes polygon{
+  from {width: 200px}
+  to {width: 220px;}
 }
 @font-face {
 font-family: "RobotoLight";

@@ -132,8 +132,22 @@
   color: #ffffff;
   text-align: center;
   font-family: 'RobotoLight';
+  font-size: 20px;
+  line-height: 90px;
+}
+.polygon-ready{
+  width: 240px;
+  margin: 10px;
+  margin-left: 25px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'RobotoLight';
   font-size: 23px;
   line-height: 90px;
+  animation: lineHeight 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 .polygon:hover{
   -webkit-transform: scale(1.2);
@@ -146,16 +160,18 @@
   left: 50%;
   top: 25%;
   transform: translateX(-100%) translateY(-50%);
+  z-index: 5;
 }
-.poly2{transform: translateX(0%) translateY(-50%);}
-.poly3{transform: translateX(-50%) translateY(30%);}
-.poly4{transform: translateX(50%) translateY(30%);}
-.poly5{transform: translateX(-150%) translateY(30%);}
+.poly2{transform: translateX(0%) translateY(-50%);z-index: 4;}
+.poly3{transform: translateX(-50%) translateY(30%);z-index: 2;}
+.poly4{transform: translateX(50%) translateY(30%);z-index: 1;}
+.poly5{transform: translateX(-150%) translateY(30%);z-index: 3;}
 #sert, #contact, #contact, #services, #reviews, #work{
   background-image: url(../image/sert.png);
   background-size: contain;
   width: 240px;
   height: 276px;
+  cursor: pointer;
 }
 #contact{background-image: url(../image/contact.png);}
 #services{background-image: url(../image/services.png);}
@@ -166,7 +182,70 @@
 #services:hover{background-image: url(../image/services-hover.png)}
 #reviews:hover{background-image: url(../image/reviews-hover.png)}
 #work:hover{background-image: url(../image/work-hover.png)}
-
+.letsdo{
+  animation: poly1-move 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.letsdo2{
+  animation: poly2-move 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.letsdo3{
+  animation: poly3-move 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.letsdo4{
+  animation: poly4-move 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.letsdo5{
+  animation: poly5-move 0.5s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+@keyframes lineHeight{
+  from {line-height: 90px;}
+  to {line-height: 140px;}
+}
+@keyframes poly1-move {
+  from {left: 50%;}
+  to {left: 300px;}
+  from {top: 25%;}
+  to {top: 154px;}
+}
+@keyframes poly2-move {
+  from {left: 50%;}
+  to {left: 25px;}
+  from {top: 25%;}
+  to {top: 230px;}
+}
+@keyframes poly3-move {
+  from {left: 50%;}
+  to {left: 438px;}
+  from {top: 25%;}
+  to {top: 74px;}
+}
+@keyframes poly4-move {
+  from {left: 50%;}
+  to {left: 163px;;}
+  from {top: 25%;}
+  to {top: 150px;}
+}
+@keyframes poly5-move {
+  from {left: 50%;}
+  to {left: -112px;}
+  from {top: 25%;}
+  to {top: 226px;}
+}
 @keyframes visible{
   from {opacity: 0;}
   to {opacity: 1;}

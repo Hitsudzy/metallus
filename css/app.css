@@ -1,0 +1,140 @@
+.section:first-child{
+  background-image: url('../image/group-8.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.section:nth-child(2) {
+  background-image: url('../image/group-5.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.logo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  animation: move 3s infinite;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.firstpage{
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%) translateY(-25%);
+  text-align: center;
+  font-size: 50px;
+  font-family: Roboto;
+  color: #ffffff;
+  opacity: 0;
+  animation: visible 1s infinite;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.firstpagecontent{
+  transform: translateY(30%);
+  text-align: center;
+  font-size: 25px;
+  font-family: Roboto;
+  color: #ffffff;
+  animation: visible 1s infinite;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+#logo{
+  animation: width 3s infinite;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+#metallus{
+    animation: visible 5s infinite;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    width: 50%;
+    margin-top: 60px;
+}
+@keyframes visible{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes move{
+  from {top: 50%;}
+  to {top: 33px;}
+}
+@keyframes width{
+  from {width: 100%;}
+  to {width: 100px;}
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  font-family: Roboto;
+}
+#left{
+  font-size: 9px;
+  text-align: left;
+  margin-top: 4vh;
+  color: #ffffff;
+
+}
+#center{
+  margin-top: 5vh;
+  height: 10vh;
+  color: #ffffff;
+
+}
+#right{
+  font-size: 9px;
+  text-align: center;
+  margin-top: 6vh;
+  color: #ffffff;
+}
+.share{
+  margin: 11px;
+  cursor: pointer;
+}
+.share:hover{
+  color: #ff6718;
+}
+#Copyright{
+    font-size: 9px;
+    text-align: center;
+    margin-top: 4vh;
+}
+.callback{
+  border: solid white 1px;
+  color: #ffffff;
+  width: 200px;
+  margin: auto;
+  margin-top: 2vh;
+  padding: 10px 5px 10px 5px;
+}
+.callback:hover{
+  color: #ff6718;
+  border-color: #ff6718;
+}
+.content{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 800px;
+}

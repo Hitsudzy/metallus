@@ -30,7 +30,7 @@
   transform: translateX(-50%) translateY(-25%);
   text-align: center;
   font-size: 50px;
-  font-family: Roboto;
+  font-family: "RobotoMedium";
   color: #ffffff;
   opacity: 0;
   animation: visible 1s infinite;
@@ -43,7 +43,7 @@
   transform: translateY(30%);
   text-align: center;
   font-size: 25px;
-  font-family: Roboto;
+  font-family: "RobotoLight";
   color: #ffffff;
   animation: visible 1s infinite;
   animation-delay: 3s;
@@ -84,28 +84,27 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   text-align: center;
   font-family: Roboto;
 }
 #left{
-  font-size: 9px;
-  text-align: left;
-  margin-top: 4vh;
   color: #ffffff;
-
+  font-family: "RobotoLight";
 }
 #center{
-  margin-top: 5vh;
-  height: 10vh;
+  object-fit: contain;
+  font-family: RobotoLight;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
   color: #ffffff;
-
 }
 #right{
-  font-size: 9px;
-  text-align: center;
-  margin-top: 6vh;
-  color: #ffffff;
+  font-family: "RobotoLight";
 }
 .share{
   margin: 11px;
@@ -115,9 +114,10 @@
   color: #ff6718;
 }
 #Copyright{
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 3vh;
+    font-family: "RobotoLight";
 }
 .callback{
   border: solid white 1px;
@@ -137,4 +137,16 @@
   top: 40%;
   transform: translateX(-50%) translateY(-50%);
   width: 800px;
+}
+@font-face {
+font-family: "RobotoLight";
+src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+@font-face {
+font-family: "RobotoMedium";
+src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
 }

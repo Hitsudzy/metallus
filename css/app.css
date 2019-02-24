@@ -136,7 +136,6 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition-duration: 0.3s
-
 }
 .poly1, .poly2, .poly3, .poly4, .poly5{
   position: absolute;

@@ -148,13 +148,13 @@
   transform: translateX(0%) translateY(-50%);
 }
 .poly3{
-  transform: translateX(-50%) translateY(33%);
+  transform: translateX(-50%) translateY(30%);
 }
 .poly4{
-  transform: translateX(50%) translateY(33%);
+  transform: translateX(50%) translateY(30%);
 }
 .poly5{
-  transform: translateX(-150%) translateY(33%);
+  transform: translateX(-150%) translateY(30%);
 }
 
 

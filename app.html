@@ -11,7 +11,7 @@
   <body>
       <div id="fullpage">
         <section class="section" data-anchor="home">
-          <div class="callback callbackup" role="button"  onclick="callback('on');">Позвоните мне</div>
+          <div class="callback" id="callbackup" role="button" onclick="callback('on');" id="call2">Позвоните мне</div>
           <div class="logo" id="divlogo">
             <img src="image/logo.png" id="logo">
           </div>
@@ -36,27 +36,33 @@
           </div>
         </section>
         <section class="section" data-anchor="content">
+          <div class="black">
           <div class="popup">
-            <div class="col-sm-9 popupcontent">
+            <div class="col-sm-9 popupcontent"><i class="close fas fa-times" onclick="callback('off')"></i>
               <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputName" placeholder="Ваше имя"></div>
               <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputPhoneNumber" placeholder="Ваш номер телефона"></div>
               <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputeMail" placeholder="Ваш eMail"></div>
           <div>
-            <div class="form-group col-sm-10"><input type="checkbox" name="price" value="yes">
-            <label for="checkbox">Хочу получить прайс</label></div>
+            <div class="form-group col-sm-10"><input type="checkbox" name="price" value="yes" id="price">
+            <label for="price">Хочу получить прайс</label></div>
           </div>
           <div class="form-group col-sm-12">
-            <div role="button">Отправить</div>
+            <div role="button" class="send">Отправить</div>
           </div>
-          <div class="form-group col-sm-12">
-            <div class="form-group col-sm-6">
+          <div class="form-group col-sm-12" style="margin:0;">
+            <div class="form-group col-sm-3"></div>
+            <div class="form-group col-sm-6" style="margin:0;">
               <div> Поделиться: </div>
-              <i class="fab fa-vk" style="font-size: 18px;"></i>
-              <i class="fab fa-twitter" style="font-size: 18px;"></i>
-              <i class="fab fa-facebook" style="font-size: 18px;"></i>
             </div>
+            <div class="form-group col-sm-3"></div>
+          </div>
+          <div class="form-group col-sm-12">
+            <i class="share fab fa-vk" style="font-size: 18px;"></i>
+            <i class="share fab fa-twitter" style="font-size: 18px;"></i>
+            <i class="share fab fa-facebook" style="font-size: 18px;"></i>
           </div>
             </div>
+          </div>
           </div>
         <div class="poly poly1" id="Poly1"><div class='polygon' id="sert" onclick="magic(sert)"><p><br>Сертификаты</p></div></div>
         <div class="poly poly2" id="Poly2"><div class='polygon' id="contact" onclick="magic(contact)"><p><br>Контакты</p></div></div>
@@ -88,7 +94,7 @@
                   </div>
                   <div class="form-group col-sm-3" id="right">
                     <hr style="color: #979797; width: 60%;">
-                    <div class="callback" role="button" onclick="callback('on');">Позвоните мне</div>
+                    <div class="callback" role="button" onclick="callback('on');" id="call">Позвоните мне</div>
                   </div>
                   <div class="form-group col-sm-1"></div>
                 </div>

@@ -1,3 +1,5 @@
+var popup = document.getElementsByClassName('popup')[0],
+    black = document.getElementsByClassName('black')[0];
 function magic(poly){
   var element = document.getElementById('Poly1');
   element.classList.add('letsdo');
@@ -28,21 +30,25 @@ function magic(poly){
 }
 function callback(mode) {
   if (mode == 'on') {
-    var element = document.getElementsByClassName('popup')[0];
+    black.style.display = "block";
+    black.classList.add('shadow');
+    popup.classList.add('popupaanimation');
     location.href = '#content';
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(false);
     $.fn.fullpage.setAllowScrolling(false);
     $.fn.fullpage.setKeyboardScrolling(false, 'down');
-    element.style.display = 'block';
+    popup.style.display = 'block';
   }
   if (mode == 'off') {
-    var element = document.getElementsByClassName('popup')[0];
+    black.style.display = "none";
+    black.classList.remove('shadow');
+    popup.classList.remove('popupaanimation');
     location.href = '#content';
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(true);
     $.fn.fullpage.setAllowScrolling(true);
     $.fn.fullpage.setKeyboardScrolling(true, 'down');
-    element.style.display = 'none';
+    popup.style.display = 'none';
   }
 }

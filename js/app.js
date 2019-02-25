@@ -28,8 +28,8 @@ function magic(poly){
 }
 function callback(mode) {
   if (mode == 'on') {
-    var element = document.getElementsByClassName('popupCallback')[0];
-    location.href = '#home';
+    var element = document.getElementsByClassName('popup')[0];
+    location.href = '#content';
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(false);
     $.fn.fullpage.setAllowScrolling(false);
@@ -37,8 +37,8 @@ function callback(mode) {
     element.style.display = 'block';
   }
   if (mode == 'off') {
-    var element = document.getElementsByClassName('popupCallback')[0];
-    location.href = '#home';
+    var element = document.getElementsByClassName('popup')[0];
+    location.href = '#content';
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(true);
     $.fn.fullpage.setAllowScrolling(true);

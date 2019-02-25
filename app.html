@@ -11,39 +11,18 @@
   <body>
       <div id="fullpage">
         <section class="section" data-anchor="home">
-          <div class="popupCallback">
-            <div class="popupWindow">
-              <div class="form-row col-md-12" style="margin-top: 30%; margin-left: 8%;">
-                <div class="form-group col-md-10"><input type="text" class="form-control shadow" id="inputName" placeholder="Ваше имя"></div>
-                <div class="form-group col-md-10"><input type="text" class="form-control shadow" id="inputPhoneNumber" placeholder="Ваш номер телефона"></div>
-                <div class="form-group col-md-10"><input type="text" class="form-control shadow" id="eMail" placeholder="Ваш eMail"></div>
-              </div>
-              <div class="popup">
-                <input type="checkbox" name="price" value="yes" style="margin-left: 20%">
-                <label for="checkbox" class="price">Хочу получить прайс</label>
-              </div>
-              <div class="priceButton" role="button">Отправить</div>
-              <div class="row col-md-12" style="margin-top: 5%; margin-left: 36%;">
-                <p style="font-family: 'RobotoLight'; color: #ffffff;">Поделиться:</p>
-              </div>
-              <div class="row col-md-12" style="margin-left: 30%; margin-top: -3%;">
-                <i class="priceShare fab fa-vk" style="font-size: 18px;"></i>
-                <i class="priceShare fab fa-twitter" style="font-size: 18px;"></i>
-                <i class="priceShare fab fa-facebook" style="font-size: 18px;"></i>
-              </div>
-            </div>
-          </div>
+          <div class="callback callbackup" role="button"  onclick="callback('on');">Позвоните мне</div>
           <div class="logo" id="divlogo">
             <img src="image/logo.png" id="logo">
           </div>
           <div class="logo" id="divlogo">
             <img src="image/metallus.png" srcset="image/metallus@2x.png 2x, image/metallus@3x.png 3x" id="metallus">
           </div>
-          <div class="firstpage" id="firstpage">
+          <div class="firstpage">
             <p>Компания по изготовлению<br>
               металлоконтрукций</p>
           </div>
-          <div class="firstpagecontent" id="firstpagecontent">
+          <div class="firstpagecontent">
               <div class="row">
                 <div class="col col-sm-2">
                 </div>
@@ -57,6 +36,28 @@
           </div>
         </section>
         <section class="section" data-anchor="content">
+          <div class="popup">
+            <div class="col-sm-9 popupcontent">
+              <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputName" placeholder="Ваше имя"></div>
+              <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputPhoneNumber" placeholder="Ваш номер телефона"></div>
+              <div class="form-group col-sm-12"><input type="text" class="form-control" id="inputeMail" placeholder="Ваш eMail"></div>
+          <div>
+            <div class="form-group col-sm-10"><input type="checkbox" name="price" value="yes">
+            <label for="checkbox">Хочу получить прайс</label></div>
+          </div>
+          <div class="form-group col-sm-12">
+            <div role="button">Отправить</div>
+          </div>
+          <div class="form-group col-sm-12">
+            <div class="form-group col-sm-6">
+              <div> Поделиться: </div>
+              <i class="fab fa-vk" style="font-size: 18px;"></i>
+              <i class="fab fa-twitter" style="font-size: 18px;"></i>
+              <i class="fab fa-facebook" style="font-size: 18px;"></i>
+            </div>
+          </div>
+            </div>
+          </div>
         <div class="poly poly1" id="Poly1"><div class='polygon' id="sert" onclick="magic(sert)"><p><br>Сертификаты</p></div></div>
         <div class="poly poly2" id="Poly2"><div class='polygon' id="contact" onclick="magic(contact)"><p><br>Контакты</p></div></div>
         <div class="poly poly3" id="Poly4"><div class='polygon' id="services" onclick="magic(services)"><p><br>Услуги</p></div></div>

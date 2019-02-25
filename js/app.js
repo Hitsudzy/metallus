@@ -26,3 +26,23 @@ function magic(poly){
   element.classList.remove('polygon');
   poly.style.backgroundImage = "url('image/"+poly.id+"-hover.png')";
 }
+function callback(mode) {
+  if (mode == 'on') {
+    var element = document.getElementsByClassName('popupCallback')[0];
+    location.href = '#home';
+    $('#fullpage').fullpage({});
+    $.fn.fullpage.setMouseWheelScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setKeyboardScrolling(false, 'down');
+    element.style.display = 'block';
+  }
+  if (mode == 'off') {
+    var element = document.getElementsByClassName('popupCallback')[0];
+    location.href = '#home';
+    $('#fullpage').fullpage({});
+    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true);
+    $.fn.fullpage.setKeyboardScrolling(true, 'down');
+    element.style.display = 'none';
+  }
+}

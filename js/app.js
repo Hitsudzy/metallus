@@ -1,3 +1,18 @@
+(function($) {
+	"use strict"
+	$('#black').click(function(){
+		$('#black').fadeToggle("slow");;
+		$('.blogpost2').fadeToggle("slow");;
+    black.style.display = "none";
+    black.classList.remove('shadow');
+    popup.classList.remove('popupaanimation');
+    $('#fullpage').fullpage({});
+    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true);
+    $.fn.fullpage.setKeyboardScrolling(true, 'down');
+    popup.style.display = 'none';
+	});
+})(jQuery);
 var popup = document.getElementsByClassName('popup')[0],
     black = document.getElementsByClassName('black')[0];
 function magic(poly){
@@ -44,15 +59,5 @@ function callback(mode,slide) {
     $.fn.fullpage.setAllowScrolling(false);
     $.fn.fullpage.setKeyboardScrolling(false, 'down');
     popup.style.display = 'block';
-  }
-  if (mode == 'off') {
-    black.style.display = "none";
-    black.classList.remove('shadow');
-    popup.classList.remove('popupaanimation');
-    $('#fullpage').fullpage({});
-    $.fn.fullpage.setMouseWheelScrolling(true);
-    $.fn.fullpage.setAllowScrolling(true);
-    $.fn.fullpage.setKeyboardScrolling(true, 'down');
-    popup.style.display = 'none';
   }
 }

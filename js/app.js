@@ -28,12 +28,17 @@ function magic(poly){
   element.classList.remove('polygon');
   poly.style.backgroundImage = "url('image/"+poly.id+"-hover.png')";
 }
-function callback(mode) {
+function callback(mode,slide) {
   if (mode == 'on') {
     black.style.display = "block";
     black.classList.add('shadow');
     popup.classList.add('popupaanimation');
-    location.href = '#content';
+    if (slide == 'home'){
+      black.style.top = "-100%";
+    }
+    if (slide == 'content') {
+      black.style.top = "0";
+    }
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(false);
     $.fn.fullpage.setAllowScrolling(false);
@@ -44,7 +49,6 @@ function callback(mode) {
     black.style.display = "none";
     black.classList.remove('shadow');
     popup.classList.remove('popupaanimation');
-    location.href = '#content';
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(true);
     $.fn.fullpage.setAllowScrolling(true);

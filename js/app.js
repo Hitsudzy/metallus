@@ -49,10 +49,12 @@ function callback(mode,slide) {
     black.classList.add('shadow');
     popup.classList.add('popupaanimation');
     if (slide == 'home'){
-      black.style.top = "-100%";
+			black.style.top = "-100%";
+      popup.style.top = "-75%";
     }
     if (slide == 'content') {
-      black.style.top = "0";
+			black.style.top = "0";
+      popup.style.top = "25%";
     }
     $('#fullpage').fullpage({});
     $.fn.fullpage.setMouseWheelScrolling(false);

@@ -1,6 +1,6 @@
 (function($) {
 	"use strict"
-	$('#black').click(function(){
+	  $('#black').click(function(){
 		$('#black').fadeToggle("slow");;
 		$('.blogpost2').fadeToggle("slow");;
     black.style.display = "none";

@@ -1,41 +1,34 @@
 <template>
   <div class="activeBar">
     <div id="ovalGroup2"><div id="activeOval2"></div><div id="deactiveOval2"></div></div>
-
     <ul id="hexGrid">
       <li class="hex" style="display:'none'"></li><li class="hex" style="display:'none'"></li><li class="hex" style="display:'none'"></li>
-
       <li class="hex">
         <a class="hexIn" href="#" id="sert">
           <p>Сертификаты</p>
         </a>
       </li>
-
       <li class="hex">
         <a class="hexIn" href="#" id="contact">
           <p>Контакты</p>
         </a>
       </li>
-
       <li class="hex">
         <a class="hexIn" href="#" id="work">
           <p>Наши работы</p>
         </a>
       </li>
-
       <li class="hex">
         <a class="hexIn" href="#" id="services">
           <p>Услуги</p>
         </a>
       </li>
-
       <li class="hex">
         <a class="hexIn" href="#" id="reviews">
           <p>Отзывы</p>
         </a>
       </li>
     </ul>
-
     <div class="footer">
       <hr>
       <div class="footerContent">
@@ -134,7 +127,7 @@
   max-width: 1200px;
   width: 60%;
   position: absolute;
-  bottom: -103%;
+  bottom: -101.5%;
 }
 .footerContent{
   display: flex;
@@ -149,7 +142,7 @@
 }
 .footerSubContentCenter{
   text-align: center;
-  font-family: "RobotoLight";
+  font-family: "RobotoThin";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -190,6 +183,7 @@
     -webkit-transform: rotate(-60deg) skewY(30deg) translatez(-1px);
         -ms-transform: rotate(-60deg) skewY(30deg) translatez(-1px);
             transform: rotate(-60deg) skewY(30deg) translatez(-1px);
+
 }
 .hex * {
     position: absolute;
@@ -207,6 +201,10 @@
     -webkit-transform: skewY(-30deg) rotate(60deg);
         -ms-transform: skewY(-30deg) rotate(60deg);
             transform: skewY(-30deg) rotate(60deg);
+                transition: 0.5s;
+}
+.hexIn:hover{
+  /* transform: skewY(-30deg) rotate(60deg) scale(1.2); */
 }
 /*** HEX CONTENT **********************************************************************/
 #sert, #contact, #reviews, #services, #work{
@@ -235,13 +233,13 @@
 /*** SPACING AND SIZING *****************************************************************/
 @media (min-width:1201px) { /* <- 5-4  hexagons per row */
   .hex {
-      width: 32.666%; /* = (100-2) / 3 */
+      width: 30.666%; /* = (100-2) / 3 */
       padding-bottom: 37.720%; /* =  width / sin(60) */
   }
   .hex:nth-child(5n+4),
   .hex:nth-child(5n+5) {
-      margin-top: -8.564%;
-      margin-bottom: -8.564%;
+      margin-top: -9.564%;
+      margin-bottom: -8.264%;
       -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
           -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
               transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -251,12 +249,12 @@
       margin-bottom: 0;
   }
   .hex:nth-child(5n+4) {
-      margin-right: 1%;
-      margin-left: 0.5%;
+      margin-right: 3%;
+      margin-left: 1.7%;
   }
   .hex:nth-child(5n+2) {
-      margin-left: 1%;
-      margin-right: 1%;
+      margin-left: 3%;
+      margin-right: 3%;
   }
   .hex:nth-child(5n+6) {
       clear: left;
